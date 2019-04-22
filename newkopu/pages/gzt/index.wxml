@@ -1,0 +1,142 @@
+<view class="gzttop">
+  <view class='gzttop-pic'>
+    <image src='http://ozr4vswg2.bkt.clouddn.com/745.png'></image>
+  </view>
+  <view class='gzttop-name'>VIP测试用户</view>
+</view>
+<view class='dingwei'>
+  <view class='dingwei-con'>
+    <view class='dingwei-content'>
+      <view class='dingwei-content-con' catchtap='godtjl'>
+        <view class='dingwei-content-con-t'>
+          <image src="{{imgurl}}/xcximage/dtjl.png" />
+        </view>
+        <view class='dingwei-content-con-b'>
+          动态记录
+        </view>
+      </view>
+      <view class='dingwei-content-con'>
+        <view class='dingwei-content-con-t'>
+          <image src="{{imgurl}}/xcximage/wdlb.png" />
+        </view>
+        <view class='dingwei-content-con-b'>
+          问答列表
+        </view>
+      </view>
+      <view class='dingwei-content-con' catchtap='golljl'>
+        <view class='dingwei-content-con-t'>
+          <image src="{{imgurl}}/xcximage/gzlb.png" />
+        </view>
+        <view class='dingwei-content-con-b'>
+          关注列表
+        </view>
+      </view>
+      <view class='dingwei-content-con' catchtap='noshow'>
+        <view class='dingwei-content-con-t'>
+          <image src="{{imgurl}}/xcximage/hysj.png" />
+        </view>
+        <view class='dingwei-content-con-b'>
+          会员升级
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class='xmnr' catchtap='gotuikejl'>
+  <view class='xmnr-l yanse1'>
+    <image src="{{imgurl}}/xcximage/gzt8.png" />招商推客发布
+  </view>
+  <view class='xmnr-r'>
+    <image src="{{imgurl}}/xcximage/gzt9.png" />
+  </view>
+</view>
+<!-- <view class='xmnr'>
+  <view class='xmnr-l yanse1'>
+    <image src="{{imgurl}}/xcximage/gzt8.png" /> 企业项目发布
+  </view>
+  <view class='xmnr-r'>
+    <image src="{{imgurl}}/xcximage/gzt9.png" />
+  </view>
+</view> -->
+<view class='xmnr2'>
+  <view class='xmnr2-con' catchtap='iszhankai2'>
+    <view class='xmnr-l yanse1'>
+      <image src="{{imgurl}}/xcximage/gzt4.png" /> 政府项目发布
+    </view>
+    <view class="{{iszk==2?'xmnr-r':'xmnr-r2'}}">
+      <image src="{{imgurl}}/xcximage/gzt9.png"   wx:if="{{iszk==2}}"/>
+       <image src="{{imgurl}}/xcximage/gzt3.png"   wx:if="{{iszk==1}}"/>
+    </view>
+  </view>
+  <view class='xmnr2-b' wx:if="{{iszk2==1}}">
+    <view catchtap=''>项目发布</view>
+    <view catchtap=''>项目管理</view>
+    <view catchtap='goztfb'>载体发布</view>
+    <view catchtap=''>载体管理</view>
+    <view catchtap=''>资源发布</view>
+    <view catchtap=''>资源管理</view>
+  </view>
+</view>
+<view class='xmnr2'>
+  <view class='xmnr2-con' catchtap='iszhankai3'>
+    <view class='xmnr-l yanse1'>
+      <image src="{{imgurl}}/xcximage/gzt4.png" /> 企业项目发布
+    </view>
+    <view class="{{iszk==2?'xmnr-r':'xmnr-r2'}}">
+      <image src="{{imgurl}}/xcximage/gzt9.png"   wx:if="{{iszk==2}}"/>
+       <image src="{{imgurl}}/xcximage/gzt3.png"   wx:if="{{iszk==1}}"/>
+    </view>
+  </view>
+  <view class='xmnr2-b' wx:if="{{iszk3==1}}">
+    <view catchtap=''>项目发布</view>
+    <view catchtap=''>项目管理</view>
+  </view>
+</view>
+<view class='xmnr2'>
+  <view class='xmnr2-con' catchtap='iszhankai'>
+    <view class='xmnr-l yanse1'>
+      <image src="{{imgurl}}/xcximage/gzt4.png" /> 企业选址管理
+    </view>
+    <view class="{{iszk==2?'xmnr-r':'xmnr-r2'}}">
+      <image src="{{imgurl}}/xcximage/gzt9.png"   wx:if="{{iszk==2}}"/>
+       <image src="{{imgurl}}/xcximage/gzt3.png"   wx:if="{{iszk==1}}"/>
+    </view>
+  </view>
+  <view class='xmnr2-b' wx:if="{{iszk==1}}">
+    <view catchtap='gofyfb'>房源发布</view>
+    <view catchtap='gofygl'>房源管理</view>
+  </view>
+</view>
+<view class='xmnr'>
+  <view class='xmnr-l yanse1'>
+    <image src="{{imgurl}}/xcximage/gzt2.png" /> 下载记录
+  </view>
+  <view class='xmnr-r'>
+    <image src="{{imgurl}}/xcximage/gzt9.png" />
+  </view>
+</view>
+<view class='xmnr'>
+  <view class='xmnr-l yanse1'>
+    <image src="{{imgurl}}/xcximage/gzt5.png" /> 充值记录
+  </view>
+  <view class='xmnr-r'>
+    <image src="{{imgurl}}/xcximage/gzt9.png" />
+  </view>
+</view>
+<view class='xmnr'>
+  <view class='xmnr-l yanse1'>
+    <image src="{{imgurl}}/xcximage/gzt6.png" /> 对接申请记录
+  </view>
+  <view class='xmnr-r'>
+    <image src="{{imgurl}}/xcximage/gzt9.png" />
+  </view>
+</view>
+<view class='xmnr' catchtap='gosetting'>
+  <view class='xmnr-l yanse1'>
+    <image src="{{imgurl}}/xcximage/gzt7.png" /> 设置
+  </view>
+  <view class='xmnr-r'>
+    <image src="{{imgurl}}/xcximage/gzt9.png" />
+  </view>
+</view>

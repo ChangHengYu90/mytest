@@ -1,0 +1,187 @@
+<view class="toptab">
+  <view class="toptab-con {{tabid==1?'tab-content3':''}}" catchtap='choosetab' id='1'>
+    <view class='tab-content tab-content2'>关注</view>
+  </view>
+  <view class="toptab-con {{tabid==2?'tab-content3':''}}" catchtap='choosetab' id='2'>
+    <view class='tab-content tab-content2'>推荐</view>
+  </view>
+  <view class="toptab-con {{tabid==3?'tab-content3':''}}" catchtap='choosetab' id='3'>
+    <view class='tab-content tab-content2'>公开课</view>
+  </view>
+  <view class="toptab-con {{tabid==4?'tab-content3':''}}" catchtap='choosetab' id='4'>
+    <view class='tab-content'>问答</view>
+  </view>
+</view>
+<view class="toptabkb">
+</view>
+<!-- 关注 -->
+<block  wx:for="{{shuju}}" wx:for-index='index' wx:if="{{tabid==1}}" wx:key="*">
+  <view class='wdcon' wx:if="{{item.Img.length<2}}">
+    <view class='wdcon-t'>
+      <view class='wdcon-t-l'>
+        <image src='{{item.Img[0]}}' wx:if="{{item.Img.length==1}}"></image>
+         <image src='{{imgurl}}/xcximage/zwpic.png' wx:if="{{item.Img.length==0}}"></image>
+      </view>
+      <view class='wdcon-t-r'>
+        <view class='wdcon-t-r-t'>
+          {{item.Detail}}
+        </view>
+        <view class='wdcon-t-r-b'>
+          <view class='wdcon-t-r-b-l'>
+            积分悬赏：{{item.Integral}}
+          </view>
+          <view class='wdcon-t-r-b-r'>
+            {{item.cityName}} {{item.Time}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='wdcon-b'>
+      <view class='wdcon-b-con' id='{{item.Id}}' catchtap='quwendao' data-index='{{index}}'>回答 {{item.ReplyCount}}</view>
+       <view class='wdcon-b-con'>
+         <button open-type="share"></button>
+      分享</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount!=null}}">点赞 {{item.LikeCount}}</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount==null}}">点赞 0</view>
+    </view>
+  </view>
+  <view class='wdcon' wx:if="{{item.Img.length>1}}">
+    <view class='wdcon-t2'>
+      <block wx:for="{{item.Img}}" wx:key='*' wx:for-item="imgitem">
+      <image src='{{imgitem}}'></image>
+      </block>
+      <image src='{{imgitem}}'></image>
+    </view>
+    <view class='wdcon-z'>{{item.Detail}}</view>
+    <view class='wdcon-t-r-b2'>
+      <view class='wdcon-t-r-b-l'>
+ 积分悬赏：{{item.Integral}}
+      </view>
+      <view class='wdcon-t-r-b-r'>
+        {{item.cityName}} {{item.Time}}
+      </view>
+    </view>
+    <view class='wdcon-b'>
+     <view class='wdcon-b-con' id='{{item.Id}}' catchtap='quwendao' data-index='{{index}}'>回答 {{item.ReplyCount}}</view>
+       <view class='wdcon-b-con'>
+         <button open-type="share"></button>
+      分享</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount!=null}}">点赞 {{item.LikeCount}}</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount==null}}">点赞 0</view>
+    </view>
+  </view>
+</block>
+<!-- 问答 -->
+<block  wx:for="{{shuju}}" wx:for-index='index' wx:if="{{tabid==4}}" wx:key="*" wx:for-index="index">
+  <view class='wdcon' bindtap='quwendao' wx:if="{{item.Img.length<2}}"  data-index='{{index}}' >
+    <view class='wdcon-t'>
+      <view class='wdcon-t-l'>
+        <image src='{{item.Img[0]}}' wx:if="{{item.Img.length==1}}"></image>
+         <image src='{{imgurl}}/xcximage/zwpic.png' wx:if="{{item.Img.length==0}}"></image>
+      </view>
+      <view class='wdcon-t-r'>
+        <view class='wdcon-t-r-t'>
+          {{item.Detail}}
+        </view>
+        <view class='wdcon-t-r-b'>
+          <view class='wdcon-t-r-b-l'>
+            积分悬赏：{{item.Integral}}
+          </view>
+          <view class='wdcon-t-r-b-r'>
+            {{item.cityName}} {{item.Time}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='wdcon-b'>
+      <view class='wdcon-b-con' id='{{item.Id}}' catchtap='quwendao' data-index='{{index}}'>回答 {{item.ReplyCount}}</view>
+      <view class='wdcon-b-con'>
+         <button open-type="share"></button>
+      分享</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount!=null}}">点赞 {{item.LikeCount}}</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount==null}}">点赞 0</view>
+    </view>
+  </view>
+  <view class='wdcon' wx:if="{{item.Img.length>1}}">
+    <view class='wdcon-t2'>
+      <block wx:for="{{item.Img}}" wx:key='*' wx:for-item="imgitem">
+      <image src='{{imgitem}}'></image>
+      </block>
+      <image src='{{imgitem}}'></image>
+    </view>
+    <view class='wdcon-z'>{{item.Detail}}</view>
+    <view class='wdcon-t-r-b2'>
+      <view class='wdcon-t-r-b-l'>
+ 积分悬赏：{{item.Integral}}
+      </view>
+      <view class='wdcon-t-r-b-r'>
+        {{item.cityName}} {{item.Time}}
+      </view>
+    </view>
+    <view class='wdcon-b'>
+     <view class='wdcon-b-con' id='{{item.Id}}' catchtap='quwendao' data-index='{{index}}'>回答 {{item.ReplyCount}}</view>
+      <view class='wdcon-b-con'>
+      <button open-type="share"></button>
+      分享</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount!=null}}">点赞 {{item.LikeCount}}</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount==null}}">点赞 0</view>
+    </view>
+  </view>
+</block>
+<!-- 推荐 -->
+<block  wx:for="{{shuju}}" wx:for-index='index' wx:if="{{tabid==4}}" wx:key="*" wx:for-index="index">
+  <view class='wdcon' bindtap='quwendao' wx:if="{{item.Img.length<2}}"  data-index='{{index}}' >
+    <view class='wdcon-t'>
+      <view class='wdcon-t-l'>
+        <image src='{{item.Img[0]}}' wx:if="{{item.Img.length==1}}"></image>
+         <image src='{{imgurl}}/xcximage/zwpic.png' wx:if="{{item.Img.length==0}}"></image>
+      </view>
+      <view class='wdcon-t-r'>
+        <view class='wdcon-t-r-t'>
+          {{item.Detail}}
+        </view>
+        <view class='wdcon-t-r-b'>
+          <view class='wdcon-t-r-b-l'>
+           <image src='{{imgurl}}/xcximage/tuijian.png'></image>
+          </view>
+          <view class='wdcon-t-r-b-r'>
+            {{item.cityName}} {{item.Time}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='wdcon-b'>
+      <view class='wdcon-b-con' id='{{item.Id}}' catchtap='quwendao' data-index='{{index}}'>回答 {{item.ReplyCount}}</view>
+      <view class='wdcon-b-con'>
+         <button open-type="share"></button>
+      分享</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount!=null}}">点赞 {{item.LikeCount}}</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount==null}}">点赞 0</view>
+    </view>
+  </view>
+  <view class='wdcon' wx:if="{{item.Img.length>1}}">
+    <view class='wdcon-t2'>
+      <block wx:for="{{item.Img}}" wx:key='*' wx:for-item="imgitem">
+      <image src='{{imgitem}}'></image>
+      </block>
+      <image src='{{imgitem}}'></image>
+    </view>
+    <view class='wdcon-z'>{{item.Detail}}</view>
+    <view class='wdcon-t-r-b2'>
+      <view class='wdcon-t-r-b-l'>
+ <image src='{{imgurl}}/xcximage/tuijian.png'></image>
+      </view>
+      <view class='wdcon-t-r-b-r'>
+        {{item.cityName}} {{item.Time}}
+      </view>
+    </view>
+    <view class='wdcon-b'>
+     <view class='wdcon-b-con' id='{{item.Id}}' catchtap='quwendao' data-index='{{index}}'>回答 {{item.ReplyCount}}</view>
+    <view class='wdcon-b-con'>
+         <button open-type="share"></button>
+      分享</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount!=null}}">点赞 {{item.LikeCount}}</view>
+      <view class='wdcon-b-con' wx:if="{{item.LikeCount==null}}">点赞 0</view>
+    </view>
+  </view>
+</block>

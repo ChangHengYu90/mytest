@@ -1,0 +1,125 @@
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>需求名称</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+         <input  placeholder='请输入需求名称'  bindinput='hqxqname'  value='{{xqname}}' placeholder-style="color:#bbb;"></input>
+      </view>
+      <view class='xmname-z-r'>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>需求类型</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class='xmname-z'>
+      
+        <view class="{{leixing=='请选择需求类型'?'xmname-z-l yanse':'xmname-z-l'}}">
+          {{leixing}}
+       
+        </view>
+        <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+        </view>
+      
+    </view>
+    </picker>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>需求区域</view>
+    <view class='xmname-z' catchtap='dianji'>
+      <view class="{{dizhi=='请选择需求区域'?'xmname-z-l yanse':'xmname-z-l'}}">
+        {{dizhi}}
+      </view>
+      <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>联系人</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+
+        <input placeholder='请输入联系人'  bindinput='hqlxr' value='{{lxr}}' placeholder-style="color:#bbb;" ></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>联系电话</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+
+        <input  placeholder='请输入联系电话'  bindinput='hqphone' type='number' value='{{phone}}' maxlength='11' placeholder-style="color:#bbb;"></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view> 
+<view class='xqsm'>
+  <view class='xqsm-l'>需求描述</view>
+  <view class='xqsm-r' wx:if="{{yinc==1}}">
+    <textarea placeholder='请输入需求（不超过100字）' value="{{xqms}}" bindinput='hqxqms'  maxlength='100' placeholder-style="color:#bbb;"></textarea>
+  </view>
+  <view class='xqsm-r' wx:if="{{yinc!=1}}">
+    <block wx:if="{{xqms.length>0}}">{{xqms}}</block>
+    <block wx:else>请输入需求（不超过100字）</block>
+  </view>
+</view>
+
+ <!-- <view class='submit' catchtap='submit' style=" background-image: url({{imgurl}}/xcximage/lansbj.png)">提交</view> -->
+ <!-- <view class='ydxy'><image src='/image/yyd.png'></image>我已阅读并同意<text>《kopu用户协议》</text></view> -->
+
+ <view class='submitkb'></view>
+ <view class='submit'>
+ 
+ <view  catchtap='submit'>提交</view></view>
+
+
+
+<view class="cascade_box" animation="{{animationData}}">
+  <view class="cascade_hei"></view>
+  <view class="cascade_find">
+    <view class="cascade_header">
+      <text class='quxiao' catchtap="quxiao">取消</text>
+      <text class="queren" catchtap="queren">确认</text>
+    </view>
+    <picker-view indicator-style="height: 80rpx;" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{sheng}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{shi}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{qu}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+<view class='startts'  wx-if='{{jlts==1}}' >
+  <view class='tishi2'>
+    <view class='tishititle'>
+      <view class='tishititle-l'></view>
+      <view class='tishititle-z'>提示</view>
+      <view class='tishititle-l'>
+        <image src='/image/colse.png' catchtap='closejlts'></image>
+      </view>
+    </view>
+    <view class='gzgzh'>关注公众号，查看项目进度</view>
+    <view class='tsqd' catchtap='closejlts'>确定
+    <view class='gogzgzh'>
+    <official-account binderror="binderror" bindload="bindload" ></official-account>
+    </view>
+    </view>
+  </view>
+</view>

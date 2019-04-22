@@ -1,0 +1,405 @@
+
+@import "../../teml/cascade.wxss";
+
+page{
+  background-color: #f6f6f6
+}
+.xmname{
+  width: 100%;
+  height: 102rpx;
+  box-sizing: border-box;
+  padding: 0 25rpx;
+  background-color: #fff;
+  
+}
+.xmname-con{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ddd;
+}
+.xmname-l{
+  width: 190rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #2F2F2F;
+}
+.xmname-z{
+  width: 510rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.xmname-z-l{
+  width: 450rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.xmname-z-r{
+  width: 60rpx;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.xmname-z-l input{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.xmname-z-l{
+  font-size: 32rpx;
+ 
+}
+.xmname-z-r image{
+  width: 18rpx;
+  height: 30rpx;
+}
+.yanse{
+  color: #bbb!important
+}
+.rclm{
+  width: 100%;
+  padding: 0 25rpx;
+  background-color: #fff;
+  margin-top: 28rpx;
+  border-top: 1rpx solid #ddd;
+  box-sizing: border-box;
+}
+.rclm-con{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ddd;
+}
+.rclm-con-l{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #2F2F2F;
+}
+.rclm-con-z{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rclm-con-z-l{
+  width: 40rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rclm-con-z-l image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.rclm-con-z-r{
+  width: 155rpx;
+  height: 100%;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #bbb;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+/* 需求说明 */
+.xqsm{
+  width: 100%;
+  height: 190rpx;
+  padding: 35rpx 25rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 28rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.xqsm-l{
+  width: 180rpx;
+  height: 100%;
+  font-size: 32rpx;
+  color: #2F2F2F;
+}
+.xqsm-r{
+  width:510rpx;
+  height: 100%;
+  font-size: 32rpx;
+}
+.xqsm-r textarea{
+  width:510rpx;
+  height: 100%;
+  font-size: 32rpx;
+   color: #2F2F2F;
+}
+/* 需求说明 */
+.scpic{
+  width: 100%;
+  padding: 35rpx 25rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 28rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.scpic-l{
+  width: 180rpx;
+  font-size: 32rpx;
+  color: #2F2F2F;
+}
+.scpic-r{
+  width:510rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.scpic-r image{
+  width:160rpx;
+  height:160rpx;
+  margin-bottom: 20rpx;
+  
+}
+.shangcdtp{
+   width:160rpx;
+  height:160rpx;
+  margin-bottom: 20rpx;
+   position: relative;
+}
+.shangcdtp image{
+   width:160rpx;
+  height:160rpx;
+}
+.dwdel{
+  width: 40rpx;
+  height: 40rpx;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.dwdel image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.scpic-r::after{
+  content: '';
+  width: 160rpx;
+}
+/* .submit{
+  width: 650rpx;
+  height: 75rpx;
+  background-size: 100% 100%;
+  font-size: 47rpx;
+  color: #fff;
+  margin-top: 70rpx;
+  margin-left: 50rpx;
+  margin-bottom: 15rpx;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 37rpx;
+} */
+.ydxy{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  color: #999;
+}
+.ydxy text{
+  color: #58A1FF
+}
+.ydxy image{
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 10rpx;
+}
+picker{
+  width: 510rpx;
+  height: 100rpx;
+}
+.startts{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.tishi{
+  width: 560rpx;
+  height: 600rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+.tishi2{
+  width: 560rpx;
+  height: 375rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+.tishititle{
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+  flex-direction: row;
+}
+.tishititle-l{
+  width: 75rpx;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+}
+.tishititle-l image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.tishititle-z{
+  width: 410rpx;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38rpx;
+  color: #999;
+}
+.zsname{
+  width: 100%;
+  height: 60rpx;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #000;
+  line-height: 60rpx;
+}
+.zscon{
+  width: 100%;
+  height: 60rpx;
+  padding-left: 105rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 60rpx;
+}
+.tsqd{
+  width: 100%;
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:38rpx;
+  color: #58A1FF;
+  border-top: 1rpx solid #ddd;
+  margin-top: 20rpx;
+  position: relative;
+}
+.gzgzh{
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #222;
+}
+.gogzgzh{
+  width: 560rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0
+} 
+.submitkb{
+  width: 100%;
+  height: 140rpx;
+}
+.submit{
+  width: 100%;
+  height: 140rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.submit view{
+  width: 80%;
+  height:82rpx;
+  border-radius: 41rpx;
+  background-color: #2888D3;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 82rpx;
+}
+.rclm{
+  width: 100%;
+  padding: 0 25rpx;
+  background-color: #fff;
+  margin-top: 28rpx;
+  border-top: 1rpx solid #ddd;
+  box-sizing: border-box;
+
+}
+.rclm-con{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ddd;
+}
+.rclm-con-l{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #2F2F2F;
+}
+.rclm-con-z{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rclm-con-z-l{
+  width: 40rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rclm-con-z-l image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.rclm-con-z-r{
+  width: 155rpx;
+  height: 100%;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #bbb;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}

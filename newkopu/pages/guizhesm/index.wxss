@@ -1,0 +1,41 @@
+/* pages/guizhesm/index.wxss */
+page{
+  background-color: #f6f6f6
+}
+.out{
+  width: 100%;
+  padding: 25rpx;
+  box-sizing: border-box;
+  
+ 
+}
+.outcon{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25rpx;
+}
+.outcon-l{
+  width: 60rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #2F2F2F;
+  line-height: 1.4;
+}
+.outcon-r{
+  width: 640rpx;
+  font-size: 30rpx;
+  color: #2F2F2F;
+}
+.outcon-rcont{
+  width: 100%;
+}
+.outcon-rcon{
+  color: #888;
+  margin-top: 10rpx;
+  line-height: 1.4;
+}
+image{
+  width: 100%
+}

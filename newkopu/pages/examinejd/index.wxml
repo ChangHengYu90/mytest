@@ -1,0 +1,267 @@
+<!-- <view class='zztjtype'>
+  <view class='title'>
+    <view class='title-name'>标题：{{content.other1}}</view>
+    <view class='leixing'>类型：<block wx:if="{{content.state==1}}">厂房</block>
+    <block wx:if="{{content.state==2}}">园区</block>
+    <block wx:if="{{content.state==3}}">土地</block>
+    <block wx:if="{{content.state==4}}">办公</block>
+    </view>
+    <view class='leixing2'>
+      <view class='leixing2-l'>联系人：{{content.people}}</view>
+      <view class='leixing2-l'>联系电话：{{content.phone}}</view>
+    </view>
+    <view class='leixing2'>
+      <view class='leixing2-l'>面积：{{content.area}}</view>
+      <view class='leixing2-l'>价格：{{content.money}}</view>
+    </view>
+  </view>
+  <view class='title'>
+  <view class='title-name'>详情描述：</view>
+  <view class='tjly'>
+      <view class='tjly-l'>1·</view>
+      <view class='tjly-r'>{{content.detail}}</view>
+    </view>
+  </view>
+  <view class='zt'>
+    <view class='title-name' style='padding-bottom:20rpx'>状态：</view>
+    <view class='ztpic' >
+      <view class='ztpic1'>
+        <view class='ztpic1-l yanse2'>审核中</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2' wx:if="{{content.state==1}}">
+        <view class='ztpic1-l'>审核不通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2' wx:if="{{content.state==2}}">
+        <view class='ztpic1-l'>审核通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <block wx:if="{{content.state==3}}">
+      <view class='ztpic1 yanse2'>
+        <view class='ztpic1-l'>审核通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2'>
+        <view class='ztpic1-l'>对接成功</view>
+        <view class='ztpic1-r2'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      </block>
+       <block wx:if="{{content.state==4}}">
+       <view class='ztpic1 yanse2' >
+        <view class='ztpic1-l'>审核通过</view>
+        <view class='ztpic1-r'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+      <view class='ztpic1 yanse2'>
+        <view class='ztpic1-l'>对接失败</view>
+        <view class='ztpic1-r2'>
+          <image src='{{imgurl}}/xcximage/lansedg.png'></image>
+        </view>
+      </view>
+        </block>
+    </view>
+  </view>
+
+
+</view> -->
+<view class='tjcon'>
+<view class='tjcon-t'>项目名称：<block wx:if="{{jindu.auditName!=''}}">{{jindu.auditName}}</block><block wx:if="{{jindu.auditName==''}}">无</block></view>
+<view class='tjcon-t'>联系人：{{jindu.plinkpeople}}</view>
+<view class='tjcon-t'>联系电话：{{jindu.plinkphone}}</view>
+<view class='tjcon-t'>推荐理由:{{jindu.pcontent}}</view>
+<!-- <view class='tjcon-tjly'>推荐理由</view>
+<view class='tjcon-tjlycon'>{{jindu.pcontent}}</view> -->
+<!--  -->
+
+</view>
+<view class='tjtype'>
+<view class='tjtype-name'>状态：</view>
+<view class='shtype' wx:if="{{jindu.state==0}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'>
+       <view class='shtype-t-rcon'>正在审核中</view>
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>审核通过</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接成功</view>
+  </view>
+
+</view>
+<view class='shtype' wx:if="{{jindu.state==1}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'> <view class='shtype-t-rcon'>审核不通过</view></view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接成功</view>
+  </view>
+
+</view> 
+<view class='shtype' wx:if="{{jindu.state==2}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'> 审核通过</view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'><view class='shtype-t-rcon'>对接中</view></view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b1'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l'></view>
+    <view class='shtype-t-r'>对接成功</view>
+  </view>
+
+</view> 
+<view class='shtype' wx:if="{{jindu.state==3}}" >
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'> 审核通过</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'><view class='shtype-t-rcon'>对接成功</view></view>
+  </view>
+
+</view>
+<view class='shtype'  wx:if="{{jindu.state==4}}">
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>
+     正在审核中
+    </view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'> 审核通过</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r2'>对接中</view>
+  </view>
+  <view class='shtype-b'>
+    <view class='shtype-b2'></view>
+  </view>
+  <view class='shtype-t'>
+    <view class='shtype-t-l2'></view>
+    <view class='shtype-t-r'><view class='shtype-t-rcon'>对接失败</view></view>
+  </view>
+
+</view>
+</view>
+</view>
+<!-- 最熟悉的陌生人:
+企业选址项目
+1、推送客户对接成功后，奖励月租金20%。\n2、引荐客户对接成功后，奖励月租金30%。\n3、预约客户，并促成对接成功，奖励月租金50%。
+
+最熟悉的陌生人:
+科技人才项目、产业发展项目
+1、推送客户对接成功后，奖励3000元。\n2、引荐客户对接成功后，5000元。\n3、预约客户，并促成对接成功，奖励8000元。
+
+最熟悉的陌生人:
+企业服务项目
+1、高新技术企业申请，投融资，人才项目申报，其他企业服务，按照2000-8000给予奖励
+ -->
+<view class='ztts' wx:if="{{qufentype==1}}">
+<view class='tjcon-tjlycon'>1、推送客户对接成功后，奖励月租金20%</view>
+<view class='tjcon-tjlycon'>2、引荐客户对接成功后，奖励月租金30%</view>
+<view class='tjcon-tjlycon'>3、预约客户，并促成对接成功，奖励月租金50%</view>
+</view>
+<view class='ztts' wx:if="{{qufentype==2||qufentype==3}}" >
+<view class='tjcon-tjlycon'>1、推送客户对接成功后，奖励3000元</view>
+<view class='tjcon-tjlycon'>2、引荐客户对接成功后，5000元</view>
+<view class='tjcon-tjlycon'>3、预约客户，并促成对接成功，奖励8000元</view>
+</view>
+<view class='ztts' wx:if="{{qufentype==4}}" >
+<view class='tjcon-tjlycon'>1、高新技术企业申请，投融资，人才项目申报，其他企业服务，按照2000-8000给予奖励</view>
+
+</view>

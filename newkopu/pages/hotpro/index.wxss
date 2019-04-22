@@ -1,0 +1,57 @@
+/* pages/hotpro/index.wxss */
+.hot-con {
+  border-top: 1rpx solid #ddd;
+  width: 100%;
+  height: 210rpx;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.hot-con-l {
+  width: 175rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hot-con-l image {
+  width: 159rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+
+.hot-con-r {
+  width: 540rpx;
+  height: 100%;
+}
+
+.hot-con-r-t {
+  width: 100%;
+  padding-top: 40rpx;
+  font-size: 28rpx;
+  color: #222c38;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot-con-r-z{
+  width: 100%;
+  padding-top: 20rpx;
+  font-size: 16rpx;
+  color: 1e1e1e;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hot-con-r-b{
+  width: 100%;
+  padding-top: 10rpx;
+  font-size: 22rpx;
+  color: 1e1e1e;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}

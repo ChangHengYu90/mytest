@@ -1,0 +1,10 @@
+<view class="content">
+  <view class='content-con'>
+    <input placeholder='{{tsc}}' placeholder-class='inputys' type='{{tsclx}}' bindinput='hqzh'></input>
+  </view>
+   <view class='content-con2' wx:if="{{tsclx==3}}">
+    <input placeholder='请输入开户行' placeholder-class='inputys' bindinput='hqkhh'></input>
+  </view>
+</view>
+
+<view class='submit' catchtap='submit'>提交</view>

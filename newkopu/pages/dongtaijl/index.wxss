@@ -1,0 +1,249 @@
+/* pages/dongtaijl/index.wxss */
+page{
+  background-color: #f6f6f6
+}
+.dtjluser{
+  width: 100%;
+  padding-top: 40rpx;
+  padding-left: 60rpx;
+  padding-bottom: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 126rpx;
+  background-color: #fff;
+}
+.dtjluser-l{
+  width: 126rpx;
+  height: 126rpx;
+}
+.dtjluser-l image{
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 50%;
+}
+.dtjluser-r{
+  width: 500rpx;
+}
+.dtjluser-r-t{
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 25rpx;
+  font-size: 34rpx;
+  color: #222;
+  font-weight: 600;
+   overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.dtjluser-r-b{
+  width: 100%;
+  height: 55rpx;
+  display: flex;
+  flex-direction: row;
+}
+.dtjluser-r-b-l{
+  width: 114rpx;
+  height: 55rpx;
+  background: linear-gradient(#2888D3, #46A2E9); /* 标准的语法 */
+  font-size: 28rpx;
+  color: #fff;
+  margin-right: 30rpx;
+  border-radius: 27rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dtjluser-r-b-r{
+  width: 114rpx;
+  height: 55rpx;
+  background: #E3E3E3;
+  font-size: 28rpx;
+  color: #444;
+  margin-right: 30rpx;
+  border-radius: 27rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dtjlxx{
+  width: 100%;
+  padding: 0 70rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+.dtjlxx-t{
+  width: 100%;
+  height: 115rpx;
+  padding-top: 30rpx;
+  border-bottom: 1rpx dashed #ccc;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.dtjlxx-c{
+  width: 120rpx;
+  height: 115rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.dtjlnum{
+  font-size: 38rpx;
+  color: #222;
+  font-weight: 600;
+  padding-bottom: 8rpx;
+}
+.dtjlnum-name{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  color: #222;
+}
+.dtjlxx-b{
+  width: 100%;
+  padding: 15rpx 30rpx;
+}
+.dtjlxx-b-c{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #888;
+
+}
+.user{
+  width: 100%;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.userxq{
+  width: 100%;
+  height: 60rpx;
+  padding-top: 28rpx;
+  display: flex;
+  align-items: center;
+  color: #444;
+  font-size: 32rpx;
+  justify-content: space-between;
+}
+.userxqview{
+  display: flex;
+  align-items: center;
+}
+.userxqview2 image{
+ width: 34rpx!important;
+ height: 34rpx!important;
+}
+.userxq image{
+  width:  60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+.userjs{
+  width: 100%;
+  padding: 25rpx 0;
+  color: #222;
+  font-size: 34rpx;
+}
+.userpic{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+}
+.userpic image{
+  width: 226rpx;
+  height: 172rpx; 
+  margin-bottom: 15rpx;
+}
+.userpic2{
+  width: 100%;
+ 
+
+}
+.userpic2 image{
+  width:100%;
+  /* height: 310rpx;  */
+  margin-bottom: 15rpx;
+}
+.userpic::after{
+  content: '';
+  width: 172rpx;
+}
+.userxxxx{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #E0E0E0;
+}
+.userxxxx-l{
+  font-size: 26rpx;
+  color: #AAAAAA;
+}
+.userxxxx-r{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.userxxxx-r-view{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  color: #919191;
+}
+.userxxxx-r-view2{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  color: #58A1FF;
+}
+.userxxxx-r-view image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.userxxxx-r-view2 image{
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 新家的样式 */
+.newys{
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newys-l{
+  width:480rpx;
+  padding-top: 5rpx;
+  font-size: 34rpx;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}
+.newys-r{
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.newys-r image{
+  width: 200rpx;
+  height: 155rpx;
+ 
+}

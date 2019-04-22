@@ -1,0 +1,208 @@
+.toptab{
+  width: 100%;
+  height: 50rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: #b7c0c9;
+  position: fixed;
+  top: 0;
+}
+.toptabkb{
+   width: 100%;
+  height: 50rpx;
+}
+.toptab-con{
+  width: 25%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-content{
+  width: 100%;
+  height: 35rpx;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+.tab-content2{
+border-right: 1rpx solid #fff;
+}
+.tab-content3{
+background-color: #99c3fd
+}
+/* .listcon{
+  width: 100%;
+  height: 274rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ddd;
+}
+.listcon-l{
+  width: 197rpx;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.listcon-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.listcon-r{
+  width: 532rpx;
+  height: 100%;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+.listcon-r-t{
+  width: 100%;
+  padding: 26rpx 26rpx 26rpx 0;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: rgb(136, 136, 136);
+  white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+.listcon-r-b{
+  width: 100%;
+  padding: 0rpx 26rpx 0rpx 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+font-size: 24rpx;
+color: rgb(172, 172, 172);
+line-height: 1.9;
+} */
+/* 问答 */
+.wdcon{
+ width: 100%;
+ box-sizing: border-box;
+ padding: 0 39rpx;
+ border-bottom: 1rpx solid #ebebeb
+}
+.wdcon-t{
+  width: 100%;
+  height: 235rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.wdcon-t-l{
+  width: 158rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.wdcon-t-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.wdcon-t-r{
+  width: 487rpx;
+  height: 235rpx;
+  box-sizing: border-box;
+  padding-top: 48rpx;
+}
+.wdcon-t-r-t{
+  width: 100%;
+   display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+ font-size: 20rpx;
+  color: rgb(137, 136, 136);
+  line-height: 1.9;
+}
+.wdcon-t-r-b{
+  padding-top: 27rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+.wdcon-t-r-b2{
+  padding-top: 27rpx;
+   padding-bottom: 23rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+.wdcon-t-r-b-l{
+  font-size: 16rpx;
+  color: rgb(89, 170, 250)
+}
+.wdcon-t-r-b-l image{
+  width: 150rpx;
+  height: 37rpx;
+}
+.wdcon-t-r-b-r{
+  font-size: 18rpx;
+  color: rgb(137, 136, 136);
+}
+.wdcon-b{
+  width: 100%;
+  display: flex;
+  padding-bottom: 27rpx;
+  justify-content: space-between;
+  flex-flow: row wrap
+}
+.wdcon-b-con{
+  width: 178rpx;
+  height: 43rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18rpx;
+  color: rgb(255, 255, 255);
+  border-radius: 15rpx;
+  background-color: #b0b9c2;
+  position: relative
+}
+.wdcon-b-con button{
+  width: 170rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255,0);
+  border: none;
+}
+button::after{
+  border: none
+}
+.wdcon-t2{
+ padding-top: 27rpx;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: row wrap;
+}
+.wdcon-t2 image{
+  width: 216rpx;
+  height: 216rpx;
+  border-radius: 15rpx;
+}
+.wdcon-t2::after{
+  content: '';
+  width: 216rpx;
+ 
+}
+.wdcon-z{
+  width: 100%;
+  padding-top: 18rpx;
+  padding-bottom: 23rpx;
+  line-height: 1.9;
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+ font-size: 20rpx;
+  color: rgb(137, 136, 136);
+}

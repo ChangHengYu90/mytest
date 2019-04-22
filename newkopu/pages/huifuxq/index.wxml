@@ -1,0 +1,106 @@
+<view class='huifu'>
+  <view class='huifu-l'>
+    <image src='{{imgurl}}/newpic/19.png'></image>
+  </view>
+  <view class='huifu-r2'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          凤凰传奇
+        </view>
+        <view class='huifu-r-t-l-b'>
+          2018-14-14
+        </view>
+      </view>
+      <view class='huifu-r-t-r'>
+      
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+    且相对是空间
+    </view>
+  </view>
+</view>
+<view class='qbhf'>全部回复 3</view>
+<view class='huifu2'>
+  <view class='huifu-l'>
+    <image src='{{imgurl}}/newpic/19.png'></image>
+  </view>
+  <view class='huifu-r'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          凤凰传奇
+        </view>
+        <view class='huifu-r-t-l-b'>
+          10分钟前
+        </view>
+      </view>
+      <view class='huifu-r-t-r'>
+      回复
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+    且相对是空间
+    </view>
+  </view>
+</view>
+<view class='huifu2'>
+  <view class='huifu-l'>
+    <image src='{{imgurl}}/newpic/19.png'></image>
+  </view>
+  <view class='huifu-r'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          凤凰传奇
+        </view>
+        <view class='huifu-r-t-l-b'>
+          10分钟前
+        </view>
+      </view>
+      <view class='huifu-r-t-r'>
+      回复
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+    <text>回复凤凰传奇：</text>且相对是空间的科技示范开始交话费开始的机会
+    </view>
+  </view>
+</view>
+<view class='huifu2'>
+  <view class='huifu-l'>
+    <image src='{{imgurl}}/newpic/19.png'></image>
+  </view>
+  <view class='huifu-r'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          凤凰传奇
+        </view>
+        <view class='huifu-r-t-l-b'>
+          10分钟前
+        </view>
+      </view>
+      <view class='huifu-r-t-r'>
+      回复
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+    且相对是空间
+    </view>
+  </view>
+</view>
+<view class='daodi'>已经到底啦</view>
+<view class='gohuifukb'></view>
+<view class='gohuifu'>
+<view class='gohuifu-l'>
+<image src='{{imgurl}}/newpic/1.png'></image>
+</view>
+<view class='gohuifu-z'>
+<input placeholder='回复迪克牛仔'></input>
+</view>
+<view class='gohuifu-r'>
+<image src='{{imgurl}}/newpic/42.png'></image>
+</view>
+</view>

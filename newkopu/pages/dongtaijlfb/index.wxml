@@ -1,0 +1,29 @@
+<view class='out'>
+  <!-- <view class='out-t'>
+    <image src="{{imgurl}}/xcximage/banner.png"></image>
+    <view class='dwjia'>
+      <image src='{{imgurl}}/xcximage/dtfbjia.png'></image>
+    </view>
+  </view> -->
+  <view class='out-t'>
+    <!-- <image src="{{imgurl}}/xcximage/banner.png"></image>
+    <view class='dwjia'>
+      <image src='{{imgurl}}/xcximage/dtfbjia.png'></image>
+    </view> -->
+    <image src="{{item}}" wx:for="{{piclist}}" wx:key="*" wx:for-index="index">
+    <view class='closepic' catchtap='delpic' id='{{index}}'>
+    <image src='{{imgurl}}/xcximage/close.png'></image>
+    </view>
+    </image>
+    <image src='{{imgurl}}/xcximage/zhaoxj.png' wx:if="{{piclist.length<9}}" catchtap='choosepic' ></image>
+  </view>
+  <view class='dizhi'>
+  <image src='{{imgurl}}/xcximage/dwlogo.png'></image>
+  {{city}}
+  </view>
+  <view class='xsje' wx:if="{{typeid==2}}"><input placeholder='悬赏金额' type='number'></input></view>
+  <textarea placeholder='KOPU动态...'></textarea>
+</view>
+<view class='fbkb'></view>
+<view class='fb' catchtap='submit'>发布</view>
+<canvas canvas-id="photo_canvas" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;position: absolute;left:-300px;top:-300px;"></canvas>

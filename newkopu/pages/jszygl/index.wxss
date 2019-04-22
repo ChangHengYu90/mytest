@@ -1,0 +1,147 @@
+/* pages/lljl/index.wxss */
+.top-type{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  border-bottom: 1rpx solid #ddd;
+}
+.top-type view{
+  width: 50%;
+  height: 100%;
+  font-size: 30rpx;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.top-typel{
+  color: #58A1FF;
+  position: relative;
+}
+.top-type2{
+
+   position: relative;
+}
+.btdw{
+ position: absolute;
+ width: 375rpx!important;
+ height: 20rpx!important;
+ display: flex;
+ justify-content: center;
+
+ align-items: center;
+ bottom: 0;
+ left: 0;
+}
+.btdw view{
+width: 40rpx;
+height: 8rpx;
+background-color: #58A1FF
+}
+.kb{
+  width: 100%;
+  height: 80rpx;
+}
+.content{
+  width: 100%;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx 45rpx;
+  box-sizing: border-box;
+}
+.content-r{
+   width: 90rpx;
+ 
+   display: flex;
+   justify-content: center;
+  align-items: center;
+   font-size: 22rpx;
+   color: #2774DA;
+}
+.content-l{
+   width: 580rpx;
+
+}
+.content-t{
+  width: 100%;
+  font-size: 30rpx;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+white-space: nowrap;
+padding-top: 10rpx;
+}
+.content-b{
+  width: 100%;
+  color: #ACACAC;
+  font-size: 22rpx;
+  padding-top: 8rpx;
+}
+.content-l2{
+   width: 580rpx;
+   display: flex;
+   justify-content: space-between;
+
+}
+.content-l-l{
+  width: 190rpx;
+  height: 160rpx;
+}
+.content-l-l image{
+  width:190rpx;
+  height: 160rpx;
+}
+.content-l-r{
+  width: 375rpx;
+  height: 100%
+}
+.content-l-r-t{
+  width: 375rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.content-l-r-b{
+  width: 375rpx;
+  height: 50rpx;
+  font-size: 26rpx;
+  color: #888;
+  white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+}
+.fbkb{
+  width: 100%;
+  height: 80rpx;
+}
+.fb{
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  background-color: #2774DA;
+  color: #fff;
+}
+.zwshuju{
+  width: 100%;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #999;
+  
+}

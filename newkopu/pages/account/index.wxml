@@ -1,0 +1,25 @@
+<view class='zhtype'> 
+  <view class='zhtype-con' id="1" catchtap='choosepay'>
+    <view class="{{paymentid==1?'zhtype-con-c2':'zhtype-con-c'}}" >支付宝</view>
+  </view>
+  <view class='zhtype-con' id="2" catchtap='choosepay'>
+    <view class="{{paymentid==2?'zhtype-con-c2':'zhtype-con-c'}}">微信</view>
+  </view>
+  <view class='zhtype-con' id="3" catchtap='choosepay'>
+    <view class="{{paymentid==3?'zhtype-con-c2':'zhtype-con-c'}}">银行卡</view>
+  </view>
+</view>
+<view class='zhgl'>
+<view catchtap='goaddzh'>添加帐号</view>
+</view>
+<view class='zhglkb'></view>
+<view class="container">
+
+<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{zhanghao}}" wx:key="*" bindtap='gofanhui' data-zh='{{item.name}}' data-khh="{{item.kaihuhang}}" >
+
+<view class="content">{{item.name}}</view>
+
+<view class="del" catchtap="del" data-id="{{item.id}}" data-index="{{index}}">删除</view>
+</view>
+
+</view>

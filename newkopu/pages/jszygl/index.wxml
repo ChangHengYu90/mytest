@@ -1,0 +1,62 @@
+<!-- <view class='top-type'>
+  <view class="{{typeid==1?'top-typel':'top-type2'}}" catchtap='choosebt' id='1'>招商推客
+  <view class='btdw' wx:if="{{typeid==1}}"><view></view></view>
+  </view>
+  <view class="{{typeid==2?'top-typel':'top-type2'}}" catchtap='choosebt' id='2'>招租推客
+   <view class='btdw' wx:if="{{typeid==2}}"><view></view></view>
+  </view>
+</view>
+<view class='kb'></view> -->
+<block wx:if="{{typeid==1}}" >
+<view class='content' wx:for="{{zstk}}" wx:key='*' bindlongpress='delzs' id="{{item.id}}" catchtap='lookzsxq' data-index='{{index}}'>
+  <view class='content-l2'>
+    <view class='content-l-l' wx:if="{{item.image!=''&&item.image!=null}}">
+      <image src='{{item.image[0]}}'></image>
+    </view>
+    <view class='content-l-l' wx:else>
+      <image src='/image/zwf.png'></image>
+    </view>
+    <view class='content-l-r'>
+        <view class='content-l-r-t'>
+         {{item.ptitle}}
+        </view> 
+        <view class='content-l-r-b'>
+         {{item.pcontent}}
+        </view> 
+        <view class='content-l-r-b'>
+          {{item.addtime}}
+        </view> 
+     </view> 
+  </view>
+  <view class='content-r'>
+ 状态查询
+  </view>
+
+</view>
+<view class='zwshuju' wx:if="{{zstk.length==0}}">暂无数据</view>
+</block>
+<block wx:if="{{typeid==2}}">
+<view class='content' wx:for='{{zztk}}' wx:key="*" wx:for-index='index'  bindlongpress='delzz' data-id="{{item.id}}" catchtap='lookzzxq' id='{{index}}'>
+  <view class='content-l'>
+    <view class='content-t'>
+     {{item.other1}}
+    </view>
+    <view class='content-b'>
+      地址： {{item.other1}}
+    </view>
+    <view class='content-b'>
+      联系人： {{item.people}}
+    </view>
+    <view class='content-b'>
+    联系电话：{{item.phone}}
+    </view>
+  </view>
+  <view class='content-r'>
+ 状态查询
+  </view>
+
+</view>
+<view class='zwshuju' wx:if="{{zztk.length==0}}">暂无数据</view>
+</block>
+<!-- <view class='fbkb'></view>
+<view class='fb' catchtap='fabu'>发布</view> -->

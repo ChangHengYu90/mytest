@@ -1,0 +1,45 @@
+/* pages/gosysm/index.wxss */
+.top{
+  width: 100%;
+  height: 100rpx;
+  color: #E11010;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.content{
+  width: 100%;
+  padding: 0 80rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 1.8
+}
+.yqm{
+  width: 100%;
+  padding-top: 45rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+  color: #EB9B00;
+  font-size: 32rpx;
+}
+.anout{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit{
+  width: 310rpx;
+  height: 55rpx;
+  border: 1rpx solid #58A1FF;
+  border-radius: 27rpx;
+  background-color: #fff;
+  color: #58A1FF;
+  font-size: 26rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}

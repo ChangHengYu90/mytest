@@ -1,0 +1,43 @@
+<import src="../../teml/cascade.wxml" />
+<view class="dqdw">
+  <view class="dqdw-t">
+    当前定位城市
+  </view>
+  <view class='dwcs'>
+    <view class='dwcs-l'>
+      <image src='/image/dw22.png'></image>
+      {{city}}</view>
+    <view class='dwcs-r' catchtap='cxsq' wx:if="{{city=='未获取'}}">
+      <image src='/image/dw11.png'></image>
+      开启定位
+    </view>
+  </view>
+  <view class="dqdw-t">
+    其他地区城市
+  </view>
+  <view class='cslist' wx:for="{{shengshi}}" wx:key="*" catchtap='dianji' wx:for-index="index" id="{{index}}">
+   {{item.ProvinceName}}
+  <image src='/image/more.png'></image>
+     
+  </view>
+</view>
+<view class="cascade_box" animation="{{animationData}}">
+  <view class="cascade_hei"></view>
+  <view class="cascade_find">
+    <view class="cascade_header">
+      <text class='quxiao' catchtap="quxiao">取消</text>
+      <text class="queren" catchtap="queren">确认</text>
+    </view>
+    <picker-view indicator-style="height: 80rpx;" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+      <!-- <picker-view-column>
+        <view wx:for="{{sheng}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column> -->
+      <picker-view-column>
+        <view wx:for="{{shi}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <!-- <picker-view-column>
+        <view wx:for="{{qu}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column> -->
+    </picker-view>
+  </view>
+</view>

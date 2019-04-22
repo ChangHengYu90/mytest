@@ -1,0 +1,99 @@
+<view class="dtjluser">
+  <view class="dtjluser-l">
+    <image src='{{href}}{{user.headImage}}'></image>
+  </view>
+  <view class="dtjluser-r">
+    <view class="dtjluser-r-t">
+      {{user.account}}
+    </view>
+    <view class="dtjluser-r-b" wx:if="{{myid!=userid}}">
+      <view class="dtjluser-r-b-l" catchtap='goguanzhu'>
+        {{guanzhu}}
+      </view>
+      <!-- <view class="dtjluser-r-b-r">
+        私信
+      </view> -->
+    </view>
+  </view>
+</view>
+<view class='dtjlxx'>
+  <view class='dtjlxx-t'>
+    <view class='dtjlxx-c'>
+      <view>
+        <view class='dtjlnum'>{{znum}}</view>
+        <view class='dtjlnum-name'>动态</view>
+      </view>
+    </view>
+    <view class='dtjlxx-c'>
+      <view>
+        <view class='dtjlnum'>{{zguanzhu}}</view>
+        <view class='dtjlnum-name'>关注</view>
+      </view>
+    </view>
+    <view class='dtjlxx-c'>
+      <view>
+        <view class='dtjlnum'>{{zfs}}</view>
+        <view class='dtjlnum-name'>粉丝</view>
+      </view>
+    </view>
+  </view>
+  <view class='dtjlxx-b'>
+    <view class='dtjlxx-b-c'>公司：{{user.company}}</view>
+    <view class='dtjlxx-b-c'>地址：{{user.address}}</view>
+    <view class='dtjlxx-b-c'>简介：{{user.otherO}}</view>
+  </view>
+</view>
+<view class="user">
+  <view wx:for="{{list}}" wx:key="*" wx:for-index="index">
+  <view class='userxq'>
+    <view class='userxqview'>
+       <image src='{{href}}{{item.HeadImage}}'></image>
+      {{item.UserName}}
+    </view>
+    <view class='userxqview2' catchtap='longTa' id='{{item.Id}}' data-index="{{index}}" wx:if="{{myid==userid}}">
+      <image src='/image/del.png'></image>
+    </view>
+  </view>
+  <!-- <view class='userjs'>{{item.Detail}}
+  </view>
+  <view class="{{item.Img.length==1?'userpic2':'userpic'}}">
+  <image src='{{child}}' wx:for="{{item.Img}}" wx:key="*" wx:for-item='child'></image>
+  </view> -->
+ <block wx:if="{{item.Img.length==1&&item.Detail.length>38}}">
+     <view class='newys'  catchtap='godongtaixq' id="{{index}}">
+     <view class='newys-l'>{{item.Detail}}</view>
+     <view class='newys-r'>
+     <image src='{{item.Img[0]}}' catchtap='looktp' data-imglist='{{item.Img}}'  data-img='{{item.Img[0]}}'></image>
+     </view>
+     </view>
+    </block>
+    <block wx:else>
+    <view class='userjs' catchtap='godongtaixq' id="{{index}}">{{item.Detail}}
+    </view>
+    <view class="{{item.Img.length>1?'userpic':'userpic2'}}" catchtap='godongtaixq' id="{{index}}">
+      <image src='{{child}}' wx:for="{{item.Img}}" wx:key="*" wx:for-item='child'  catchtap='looktp' data-imglist='{{item.Img}}'  data-img='{{child}}'></image>
+    </view>
+    </block>
+  <view class='userxxxx'>
+    <view class='userxxxx-l'>{{item.cityName}} {{item.Time}}</view>
+    <view class='userxxxx-r'>
+      <!-- <view class='userxxxx-r-view'>
+        <image src='{{imgurl}}/newpic/7.png'></image>
+      </view> -->
+      <view class='userxxxx-r-view' catchtap='godainzan' id='{{index}}'>
+        <image src='{{imgurl}}/newpic/5.png'></image>
+        {{item.like}}
+      </view>
+      <!-- <view class='userxxxx-r-view2'>
+        <image src='{{imgurl}}/newpic/4.png'></image>
+        12
+      </view> -->
+      <view class='userxxxx-r-view' catchtap='godongtaixq' id="{{index}}">
+        <image src='{{imgurl}}/newpic/11.png'></image>
+        {{item.ReplyCount}}
+      </view>
+
+    </view>
+  </view>
+  </view>
+</view>

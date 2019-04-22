@@ -1,0 +1,136 @@
+<view class='huifu'>
+  <view class='huifu-l' wx:if="{{item.HeadImage!=null}}">
+    <image src='{{href}}/{{item.HeadImage}}'></image>
+  </view>
+  <view class='huifu-l' wx:if="{{item.HeadImage==null}}">
+    <image src='/image/logo.png'></image>
+  </view>
+  <view class='huifu-r2'>
+    <view class='huifu-r-t2'>
+      <view class='huifu-r-t-l'>
+        {{item.UserName}}
+      </view>
+      <view class='huifu-r-t-r2' catchtap='goguanzhu' wx:if="{{item.UserId!=userid}}">
+        {{guanzhu}}
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class='huifu-r-b2'>
+  {{item.Detail}}
+</view>
+<view class='huifu-r-b2pic'>
+ <image src='{{child}}' wx:for="{{item.Img}}" wx:key="*" wx:for-item='child' catchtap='lookpic' data-img="{{child}}" data-imglist="{{item.Img}}"></image>
+</view>
+<view class='fbdizhi'>{{item.cityName}} {{item.DateTime}}</view>
+<view class='qbhf' wx:if="{{pllist.CommentA.length>0}}">全部回复 {{pllist.CommentA.length}}</view>
+<view class='huifu2' wx:for="{{pllist.CommentA}}" wx:for-item='plitem'>
+  <view class='huifu-l'>
+   <image src='{{href}}{{plitem.ReplyHeadrImg}}'></image>
+  </view>
+  <view class='huifu-r'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          {{plitem.UserName}}
+        </view>
+        <view class='huifu-r-t-l-b'>
+          {{plitem.Time}}
+        </view>
+      </view>
+      <view class='huifunum' catchtap='gohuifu' data-dynamicid='{{plitem.DynamicId}}' data-id='{{plitem.Id}}' data-userid='{{plitem.UserId}}' data-username="{{plitem.UserName}}" >
+        {{plitem.hf.length}}回复
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+      <view class='huifu-r-b'>{{plitem.Detail}}</view>
+      <view class='hfplr' wx:if="{{plitem.hf.length>0}}" wx:for="{{plitem.hf}}" wx:key="*" wx:for-item='hflist' catchtap='gohuifuhf' data-dynId="{{hflist.dynId}}" data-plrid="{{hflist.replyId}}" data-commentId="{{hflist.commentId}}" data-userCommentId="{{hflist.userCommentId}}" data-userComment="{{hflist.userComment}}" data-replyId="{{hflist.replyId}}" data-replyName="{{hflist.replyName}}">
+      <view class='huifuneir'><text>{{hflist.userName}}回复：</text>{{hflist.replyDetail}}</view>
+      <view class='pltime'>{{hflist.Time}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class='huifu2'>
+  <view class='huifu-l'>
+    <image src='{{imgurl}}/newpic/19.png'></image>
+  </view>
+  <view class='huifu-r'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          凤凰传奇
+        </view>
+        <view class='huifu-r-t-l-b'>
+          10分钟前
+        </view>
+      </view>
+      <view class='huifu-r-t-r'>
+        回复
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+      <text>回复凤凰传奇：</text>且相对是空间的科技示范开始交话费开始的机会
+    </view>
+  </view>
+</view>
+<view class='huifu2'>
+  <view class='huifu-l'>
+    <image src='{{imgurl}}/newpic/19.png'></image>
+  </view>
+  <view class='huifu-r'>
+    <view class='huifu-r-t'>
+      <view class='huifu-r-t-l'>
+        <view class='huifu-r-t-l-t'>
+          凤凰传奇
+        </view>
+        <view class='huifu-r-t-l-b'>
+          10分钟前
+        </view>
+      </view>
+      <view class='huifu-r-t-r'>
+        回复
+      </view>
+    </view>
+    <view class='huifu-r-b'>
+      且相对是空间
+    </view>
+  </view>
+</view> -->
+<view class='daodi'>已经到底啦</view>
+<view class='gohuifukb'></view>
+<view class='gohuifu'>
+  <view class='gohuifu-l'>
+    <image src='{{imgurl}}/newpic/1.png'></image>
+  </view>
+  <view class='gohuifu-z'>
+    <!-- <input placeholder='我来评论...'></input> -->
+    <view catchtap='gofabupl'>我来评论...</view>
+  </view>
+  <view class='gohuifu-l2' catchtap='godainzan' id="{{item.like}}">
+    <image src='{{imgurl}}/newpic/5.png'></image>
+    <view class='dianznum'>{{item.like}}</view>
+  </view>
+  <!-- <view class='gohuifu-r'>
+    <image src='/image/fenxiang.png'></image>
+  </view> -->
+</view>
+<view class='plzz' wx:if="{{tcpjcon==1}}" bindtap='gbplcon'>
+  <view class='plzz-con' catchtap='fzmp'>
+    <textarea class='pl-con' placeholder='请输入评价内容' bindinput='hqpjcon'></textarea>
+    <view class='pl-con-an'>
+      <view class='pl-con-an-l'></view>
+      <view class='pl-con-an-r' catchtap='gofabuplcon'>发布</view>
+    </view>
+  </view>
+</view>
+<view class='plzz' wx:if="{{tcpjcon2==1}}" bindtap='gbplcon2'>
+  <view class='plzz-con' catchtap='fzmp2'>
+    <textarea class='pl-con' placeholder='请输入评价内容1' bindinput='hqpjcon2' ></textarea>
+    <view class='pl-con-an'>
+      <view class='pl-con-an-l'></view>
+      <view class='pl-con-an-r' catchtap='gofabuplcon2'>发布</view>
+    </view>
+  </view>
+</view>

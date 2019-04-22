@@ -1,0 +1,142 @@
+/* .toptab{
+  width: 100%;
+  height: 50rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: #b7c0c9;
+  position: fixed;
+  top: 0;
+}
+.toptabkb{
+   width: 100%;
+  height: 50rpx;
+}
+.toptab-con{
+  width: 25%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-content{
+  width: 100%;
+  height: 35rpx;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+.tab-content2{
+border-right: 1rpx solid #fff;
+}
+.tab-content3{
+background-color: #99c3fd
+}
+.listcon{
+  width: 100%;
+  height: 274rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ddd;
+}
+.listcon-l{
+  width: 197rpx;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.listcon-l image{
+  width: 158rpx;
+  height: 179rpx;
+  border-radius: 20rpx;
+}
+.listcon-r{
+  width: 532rpx;
+  height: 100%;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+.listcon-r-t{
+  width: 100%;
+  padding: 26rpx 26rpx 26rpx 0;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: rgb(136, 136, 136);
+  white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+.listcon-r-b{
+  width: 100%;
+  padding: 0rpx 26rpx 0rpx 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+font-size: 24rpx;
+color: rgb(172, 172, 172);
+line-height: 1.9;
+} */
+.gzlist{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+}
+.gzlist-l{
+  width: 140rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gzlist-l image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.gzlist-z{
+  width: 410rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.gzlist-zcon{
+  width: 410rpx;
+}
+.gzlist-z-t{
+  width: 410rpx;
+  font-size: 30rpx;
+  margin-bottom: 5rpx;
+  color: #444;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.gzlist-z-b{
+  width: 410rpx;
+  font-size: 26rpx;
+  color: #999;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.gzlist-r{
+  width: 170rpx;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.gzlist-r view{
+  padding: 5rpx 10rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #58A1FF;
+  border-radius: 25rpx;
+}

@@ -1,0 +1,80 @@
+/* pages/fabu/index.wxss */
+.ceshi{
+  width: 100%;
+  height: 500rpx;
+}
+.ceshi image{
+  width: 100%;
+  height: 500rpx;
+}
+.fabuzz{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(70, 72, 74, 0.6)
+}
+.fabuzz-t{
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #fff;
+  align-items: center;
+}
+.fabutype{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.fabutype::after{
+  content: '';
+  width: 235rpx;
+}
+.fabutype-con{
+  width: 235rpx;
+  height: 220rpx;
+    z-index: 99
+}
+.fabutype-con-t{
+  width: 100%;
+  height: 136rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fabutype-con-t-pic{
+  width:136rpx;
+  height: 136rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.fabutype-con-t-pic image{
+  width:64rpx;
+  height: 64rpx;
+  
+}
+.fabutype-con-b{
+  width: 100%;
+  padding-top: 15rpx;
+  font-size: 26rpx;
+  color: #ccc;
+  text-align: center;
+}
+.fabuclose{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.fabuclose image{
+  width: 54rpx;
+  height: 54rpx;
+}

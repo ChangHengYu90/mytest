@@ -1,0 +1,68 @@
+<!-- <view class="toptab">
+  <view class="toptab-con {{tabid==1?'tab-content3':''}}" catchtap='choosetab' id='1'>
+    <view class='tab-content tab-content2'>招商项目</view>
+  </view>
+  <view class="toptab-con {{tabid==2?'tab-content3':''}}" catchtap='choosetab' id='2'>
+    <view class='tab-content tab-content2'>招才引智</view>
+  </view>
+  <view class="toptab-con {{tabid==3?'tab-content3':''}}" catchtap='choosetab' id='3'>
+    <view class='tab-content tab-content2'>项目申报</view>
+  </view>
+  <view class="toptab-con {{tabid==4?'tab-content3':''}}" catchtap='choosetab' id='4'>
+    <view class='tab-content'>kopu公开课</view>
+  </view>
+</view>
+<view class="toptabkb">
+</view>
+<view class='listcon' wx:for="{{list}}" wx:key="*" wx:if="{{tabid==1}}">
+  <view class='listcon-l'>
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>{{item.name}}</view>
+    <view class='listcon-r-b'>{{item.detai}}</view>
+  </view>
+</view>
+<view class='listcon' wx:for="{{list2}}" wx:key="*" wx:if="{{tabid==2}}">
+  <view class='listcon-l'>
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>{{item.account}}</view>
+    <view class='listcon-r-b'>{{item.phone}}</view>
+  </view>
+</view>
+<view class='listcon' wx:for="{{list3}}" wx:key="*" wx:if="{{tabid==3}}">
+  <view class='listcon-l'>
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>{{item.name}}</view>
+    <view class='listcon-r-b'>{{item.phone}}</view>
+  </view>
+</view>
+<view class='listcon' wx:for="{{list4}}" wx:key="*" wx:if="{{tabid==4}}">
+  <view class='listcon-l'>
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class='listcon-r'>
+    <view class='listcon-r-t'>{{item.name}}</view>
+    <view class='listcon-r-b'>{{item.detai}}</view>
+  </view>
+</view> -->
+<view class='gzlist' wx:for="{{list}}" wx:key="*" catchtap='golookxq' id='{{item.userId}}'>
+<view class='gzlist-l'>
+<image src='{{href}}/{{item.Manager[0].headImage}}'></image>
+</view>
+<view class='gzlist-z'>
+<view class='gzlist--zcon'>
+<view class='gzlist-z-t'>{{item.Manager[0].account}}</view>
+<view class='gzlist-z-b'>{{item.Manager[0].otherO}}</view>
+</view>
+
+</view>
+<view class='gzlist-r' catchtap='goquxiao' data-id="{{item.userId}}" data-pid="{{item.pid}}">
+<view>已关注</view>
+</view>
+</view>
+

@@ -1,0 +1,167 @@
+<!-- <import src="../../teml/cascade.wxml" />
+<view class="qyxzxg">
+  <view class='xg-con'>
+    
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l2'>
+        标题
+      </view>
+      <view class='xg-con-sr-r2'>
+        <input placeholder='请输入标题' maxlength='60' bindinput='hqbt' type='text'></input>
+      </view>
+    </view>
+    <view class='xg-con-sr'>
+      <view class='xg-con-sr-l'>
+        <view>类型</view>
+      </view>
+      <picker bindchange="bindPickerChange5" value="{{index}}" range="{{array5}}">
+        <view class='xg-con-sr-r'>
+          <view class='xg-con-sr-r-l'>{{zhuanli}}</view>
+          <view class='xg-con-sr-r-r'>
+            <image src='{{imgurl}}/xcximage/yysj.png'></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='xqms'>详情描述</view>
+  <textarea maxlength='2000' bindinput='huxqms' placeholder='请输入详情描述'></textarea>
+  <view class='xqms'>上传图片</view>
+  <view class='shangcpic'>
+    <block wx:for="{{uploadpic}}" wx:key="*" wx:for-index="index">
+      <view class='shangcdtp'>
+        <image src='{{item}}'></image>
+        <view class='dwdel' catchtap='godelpic' id="{{index}}">
+          <image src='{{imgurl}}/xcximage/close.png'></image>
+        </view>
+      </view>
+    </block>
+    <view class='shangcdtp' catchtap='choosescpic' wx:if="{{uploadpic.length<9}}">
+      <image src='{{imgurl}}/xcximage/zhaoxj.png'></image>
+    </view>
+  </view>
+  <view class='submit' catchtap='submit' style=" background-image: url({{imgurl}}/xcximage/lansbj.png)">提交</view>
+</view> -->
+<import src="../../teml/cascade.wxml" />
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>公司名称</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+
+        <input placeholder='请输入公司名称' maxlength='40' bindinput='hqgsname' value='{{gsname}}' type='text'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>项目类型</view>
+     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class='xmname-z'>
+     
+        <view class="{{leixing=='请选择'?'xmname-z-l yanse':'xmname-z-l'}}">
+          {{leixing}}
+          <!-- <input placeholder='请输入项目名称' disabled='true' value='{{leixing}}'></input> -->
+        </view>
+        <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+        </view>
+      
+    </view>
+    </picker>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>项目区域</view>
+    <view class='xmname-z' catchtap='dianji'>
+      <view class="{{dizhi=='请选择'?'xmname-z-l yanse':'xmname-z-l'}}">
+        {{dizhi}}
+      </view>
+      <view class='xmname-z-r'>
+        <image src='/image/more.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>联系人</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <input placeholder='请输入联系人' maxlength='40'  value='{{xmlxr}}' bindinput='hqlxr'></input>
+      </view>
+      <view class='xmname-z-r'>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>联系电话</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <input placeholder='请输入联系电话' maxlength='11'  value='{{xmphone}}' bindinput='hqphone'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<view class='xmname'>
+  <view class='xmname-con'>
+    <view class='xmname-l'>地址</view>
+    <view class='xmname-z'>
+      <view class='xmname-z-l'>
+        <!-- <input placeholder='请输入项目名称'></input> -->
+        <input placeholder='请输入地址' maxlength='40' bindinput='hqxmname' value='{{xmname}}' type='text'></input>
+      </view>
+      <view class='xmname-z-r'></view>
+    </view>
+  </view>
+</view>
+<!-- 需求说明 -->
+<view class='xqsm'>
+  <view class='xqsm-l'>介绍</view>
+  <view class='xqsm-r'>
+    <textarea placeholder='请输入需求（不超过100字）' wx:if="{{yinc==1}}" bindinput='huxqms' value='{{xmxqms}}' maxlength='100'></textarea>
+  </view>
+</view>
+<!-- 上传图片 -->
+<view class='scpic'>
+  <view class='scpic-l'>LOGO</view>
+  <view class='scpic-r'>
+    <image src='/image/xzsc.png' catchtap='choosescpic' wx:if="{{uploadpic.length<9}}"></image>
+    <block wx:for="{{uploadpic}}" wx:key="*" wx:for-index="index">
+      <view class='shangcdtp'>
+        <image src='{{item}}'></image>
+        <view class='dwdel' catchtap='godelpic' id="{{index}}">
+          <image src='{{imgurl}}/xcximage/close.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+ <view class='submit' catchtap='submit' style=" background-image: url({{imgurl}}/xcximage/lansbj.png)">提交</view>
+ <view class='ydxy'><image src='/image/yyd.png'></image>我已阅读并同意<text>《kopu用户协议》</text></view>
+<view class="cascade_box" animation="{{animationData}}">
+  <view class="cascade_hei"></view>
+  <view class="cascade_find">
+    <view class="cascade_header">
+      <text class='quxiao' catchtap="quxiao">取消</text>
+      <text class="queren" catchtap="queren">确认</text>
+    </view>
+    <picker-view indicator-style="height: 80rpx;" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{sheng}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{shi}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{qu}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

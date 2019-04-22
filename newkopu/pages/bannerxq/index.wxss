@@ -1,0 +1,38 @@
+/* pages/wangye/index.wxss */
+@import "../../wxParse/wxParse.wxss";
+.content{
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.content-t{
+  width: 100%;
+}
+.content-t image{
+  width: 100%;
+}
+.dwclasskb{
+width: 100%;
+  height: 85rpx;
+}
+.dwclass{
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+}
+.dwclass view{
+  height: 50rpx;
+  padding: 0 30rpx;
+  border-radius: 20rpx;
+  background-color: #378ff9;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 50rpx;
+  text-align: center;
+}

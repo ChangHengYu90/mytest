@@ -1,0 +1,48 @@
+<view class='tixian'>
+<view class='tixian-l'>
+<view class='tixian-l-l'>1.<span>搜索：</span></view>
+<view class='tixian-l-r'>关注公众号领赏搜索公众号：“kopu”产业保存二维码扫码关注</view>
+</view>
+<view class='tixian-r'>
+<image src='/image/ewm.png'></image>
+</view>
+</view>
+<view class='zhtx'>2.账号提现</view>
+<view class='zhtype'>
+  <view class='zhtype-con' id="1" catchtap='choosepay'>
+    <view class="{{paymentid==1?'zhtype-con-c2':'zhtype-con-c'}}" >支付宝</view>
+  </view>
+  <view class='zhtype-con' id="2" catchtap='choosepay'>
+    <view class="{{paymentid==2?'zhtype-con-c2':'zhtype-con-c'}}">微信</view>
+  </view>
+  <view class='zhtype-con' id="3" catchtap='choosepay'>
+    <view class="{{paymentid==3?'zhtype-con-c2':'zhtype-con-c'}}">银行卡</view>
+  </view>
+</view>
+<view class='zhnr'>
+<view class='changyzh' catchtap='goczcy'>
+  <image src='/image/wx.png'></image>
+  常用帐号
+  </view>
+<view class='zfbout' wx:if="{{paymentid==1}}"><input placeholder='请输入支付宝帐号' placeholder-class='srkclass'  bindinput='hqzfb' value='{{zfb}}'></input></view>
+<view class='zfbout' wx:if="{{paymentid==2}}"><input placeholder='请输入微信帐号' placeholder-class='srkclass' bindinput='hqweix' value='{{weixin}}'></input></view>
+<view class='zfbout' wx:if="{{paymentid==3}}"><input placeholder='请输入银行卡号' placeholder-class='srkclass' bindinput='hqyhk' type="number" value='{{yhk}}'></input></view>
+<view class='zfbout khh' wx:if="{{paymentid==3}}"><input placeholder='请输入开户行' placeholder-class='srkclass' bindinput='hqkhh' value='{{khh}}'></input></view>
+<view class='ktxje'>可提现金额<span>{{price}}</span>元</view>
+<view class='zfbout'><input placeholder='请输入提现金额' placeholder-class='srkclass' type='number' bindinput='txje'></input></view>
+</view>
+<view class='tishici'>
+<view class='tishici-con'>
+<view class='tishici-con-l'>1.</view>
+<view class='tishici-con-r'>账号提现通过审核3-5个工作日内到提取到您的指定账户</view>
+</view>
+<view class='tishici-con'>
+<view class='tishici-con-l'>2.</view>
+<view class='tishici-con-r'>支付宝、银行处理会有一定延迟，请耐心等待，如有疑问请关注公众号与客服联系！</view>
+</view>
+</view>
+<view class='submitoutkb'></view>
+<view class='submitout'>
+<view class='submit' catchtap='submit'>提现</view>
+</view>
+ 

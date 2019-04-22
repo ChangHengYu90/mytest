@@ -1,0 +1,82 @@
+<view class='ceshi'>
+  <image src='{{imgurl}}/newpic/34.png'></image>
+</view>
+<view class="fabuzz">
+  <view class="fabuzz-t">选择发布信息的类型</view>
+
+  <view class='fabutype'>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+    <view class='fabutype-con'>
+      <view class='fabutype-con-t'>
+        <view class='fabutype-con-t-pic'>
+          <image src='{{imgurl}}/newpic/34.png'></image>
+        </view>
+      </view>
+      <view class='fabutype-con-b'>
+        发布项目
+      </view>
+    </view>
+  </view>
+  <view class='fabuclose'>
+    <image src='/image/close.png'></image>
+  </view>
+</view>

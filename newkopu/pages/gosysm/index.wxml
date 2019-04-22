@@ -1,0 +1,6 @@
+<view class='top'>邀请码如何使用？</view>
+<view class='content'>邀请好友安装kopu产业在线APP，在【首页】--【分享码】，或者【我的】--【复制】中获取你的邀请码，通过微信、qq等方式分享给好友，好友通过你的邀请码注册，你将获取邀请新奖励，受邀用户完成相应任务，你将获取更多奖励。</view>
+<view class='yqm'>{{yqm}}</view>
+<view class='anout'>
+<view class='submit' catchtap='gofuzhi'>复制邀请码</view>
+</view>

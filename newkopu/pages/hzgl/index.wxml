@@ -1,0 +1,70 @@
+<!-- <view class='dw'>
+  <view class='dw-b'>
+    <view class='dw-bview'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+
+
+        <view class="{{leixing=='类型'?'picker':'picker yanse'}}">
+          {{leixing}}
+          <image src='/image/121.png'></image>
+        </view>
+      </picker>
+    </view>
+    <view class='dw-bview'>
+
+      <view class="{{quyu=='区域'?'picker':'picker yanse'}}" catchtap='dianji'>
+        {{quyu}}
+        <image src='/image/121.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='dwkb'></view>
+<view class='content' wx:for='{{hotlist}}' wx:key="*" wx:for-index="index" id="{{item.pid}}" data-index='{{index}}' catchtap='goproxq'>
+  <view class='content-l'>
+    <image src='{{item.pimage}}'></image>
+  </view>
+  <view class='content-r'>
+    <view class='content-r-t'>{{item.ptitle}}</view>
+    <view class='content-r-b'>{{item.pmiaoshu}}</view>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{hotlist.length==0}}">暂无数据</view>
+
+<view class="cascade_box" animation="{{animationData}}">
+  <view class="cascade_hei"></view>
+  <view class="cascade_find">
+    <view class="cascade_header">
+      <text class='quxiao' catchtap="quxiao">取消</text>
+      <text class="queren" catchtap="queren">确认</text>
+    </view>
+    <picker-view indicator-style="height: 80rpx;" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{sheng}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{shi}}" wx:key='this' style="line-height: 80rpx;text-align:center;">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view> -->
+<view class="zszy" wx:for="{{list}}" wx:key="*" wx:for-index="index" data-index="{{index}}" bindlongpress='longTa' id='{{item.id}}' catchtap='goxiugai'>
+  <view class="zszy-l" wx:if="{{item.img!=''}}">
+    <image src='{{item.img}}'></image>
+  </view>
+  <view class="zszy-l" wx:if="{{item.img==''}}">
+    <image src='/image/zwf.png'></image>
+  </view>
+  <view class="zszy-r">
+    <view class="zszy-r-t">
+      {{item.other1}}
+    </view>
+    <view class="zszy-r-b">
+      {{item.detail}}
+    </view>
+    <view class="zszy-r-b">
+      {{item.phone}}
+    </view>
+  </view>
+</view>
+<view class='zwshuju' wx:if="{{list.length==0}}">暂无数据</view>

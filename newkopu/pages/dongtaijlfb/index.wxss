@@ -1,0 +1,113 @@
+/* pages/dongtaijlfb/index.wxss */
+.out{
+  width: 100%;
+  padding: 65rpx 45rpx 0rpx 45rpx;
+  box-sizing: border-box;
+}
+/* .out-t{
+  width: 100%;
+  height: 330rpx;
+  position: relative;
+}
+.out-t image{
+  width: 100%;
+  height: 100%;
+  
+} */
+.out-t{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.out-t image{
+  width: 200rpx;
+  height: 200rpx;
+  border: 1rpx solid #bbb;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.out-t::after{
+  content: '';
+  width: 200rpx;
+}
+.closepic{
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: 0rpx;
+  right: 0rpx;
+}
+.closepic image{
+  width: 40rpx;
+  height: 40rpx;
+  border: none
+}
+.dwjia{
+  width: 74rpx;
+  height: 74rpx;
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.dwjia image{
+  width: 100%;
+  height: 100%;
+}
+.dizhi{
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999;
+}
+.dizhi image{
+  width: 27rpx;
+  height: 34rpx;
+  margin-right: 16rpx;
+}
+textarea{
+  width: 100%;
+  height: 140rpx;
+  padding: 15rpx 25rpx;
+  box-sizing: border-box;
+  font-size: 22rpx;
+  color: #4d606f;
+  background-color: rgb(238, 238, 238)
+}
+.fbkb{
+  width: 100%;
+  height: 80rpx;
+}
+.fb{
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 143, 249);
+  color: #fff;
+  font-size: 30rpx;
+}
+.xsje{
+  width: 100%;
+  height: 40rpx;
+  padding: 0 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.xsje input{
+  width: 100%;
+  height: 40rpx;
+  font-size: 24rpx;
+}

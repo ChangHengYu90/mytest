@@ -1,0 +1,142 @@
+.huifu{
+  width: 100%;
+  padding: 45rpx 25rpx 0rpx 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+  margin-bottom: 25rpx;
+}
+.huifu2{
+  width: 100%;
+  padding: 45rpx 25rpx 0rpx 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+
+}
+.huifu-l{
+  width: 56rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.huifu-l image{
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+}
+.huifu-r2{
+  width: 636rpx;
+}
+.huifu-r{
+  width: 636rpx;
+  border-bottom: 1rpx solid #ddd
+}
+.huifu-r-t{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+}
+.huifu-r-t-l-t{
+  font-size: 28rpx;
+  color: #444;
+  margin-bottom: 6rpx
+}
+.huifu-r-t-l-b{
+  font-size: 24rpx;
+  color: #aaa;
+}
+.huifu-r-b{
+  width: 100%;
+  font-size: 34rpx;
+  color: #222;
+  padding-bottom: 40rpx;
+}
+.huifu-r-b text{
+  width: 100%;
+  font-size: 34rpx;
+  color: #B1B4BF;
+}
+
+
+.qbhf{
+  padding: 0rpx 25rpx;
+  padding-top: 60rpx;
+  color: #aaa;
+  font-size: 32rpx;
+  width: 100%;
+  background-color: #F9F9F9;
+}
+.huifu-r-t-r{
+  color: #444;
+  font-size: 28rpx;
+  padding: 5rpx 0;
+}
+.daodi{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #999;
+  background-color: #F9F9F9;
+}
+.gohuifukb{
+  width: 100%;
+  height: 100rpx;
+}
+.gohuifu{
+  width: 100%;
+  height: 100rpx;
+  padding: 0 35rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+}
+.gohuifu-l{
+  width: 60rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.gohuifu-l image{
+  width: 40rpx;
+  height: 40rpx;
+ border: 1rpx dashed #ddd
+}
+.gohuifu-z{
+  width: 560rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gohuifu-z input{
+  width: 560rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  font-size: 34rpx;
+  align-items: center;
+}
+.gohuifu-r{
+  width: 60rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+.gohuifu-r image{
+  width: 40rpx;
+  height: 40rpx;
+ border: 1rpx dashed #ddd
+}
